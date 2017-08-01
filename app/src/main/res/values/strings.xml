@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">"Poosh-Android"</string>
+    <string name="title_activity_launch">LaunchActivity</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_verify">VerifyActivity</string>
+    <string name="title_activity_effects">Choose effect</string>
+    <string name="title_activity_contacts">Choose contacts</string>
+    <string name="title_activity_final">FinalActivity</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="ok">OK</string>
+    <string name="loading_error">Loading error</string>
+
+
+    <!--RegistrationActivity-->
+    <string name="activity_registration_help_title">
+        Enter your phone number and we\'ve sent \n an SMS with an activation code to your phone
+    </string>
+    <string name="activity_registration_editText_hint">+7 000 000 00 00</string>
+    <string name="activity_registration_error_message">Error. Try it again.</string>
+
+
+    <!--VerifyActivity-->
+    <string name="activity_verify_help_title">
+        We have sent you a code via SMS. \nPlease enter it below.
+    </string>
+
+
+    <!--MainActivity-->
+    <string name="activity_main_tab_title_voice">VOICE</string>
+    <string name="activity_main_tab_title_sound">SOUND</string>
+
+    <!--MainMenu-->
+    <string name="menu_main_title_more">More</string>
+    <string name="menu_main_title_invite">Invite friends</string>
+    <string name="menu_main_title_mute">Mute</string>
+    <string name="menu_main_title_restore_purchases">Restore purchases</string>
+    <string name="menu_main_title_logout">Log out</string>
+
+
+    <!--VoiceFragment-->
+    <string name="record_view_help_title">Hold button \n for recording your voice</string>
+    <string name="record_view_recording_title">Speak Now\.\.\.</string>
+
+
+    <!--SoundFragment-->
+    <string name="section_sound_buy_button_title">Buy full pack</string>
+
+
+    <!--FinalActivity-->
+    <string name="activity_final_title_text">Your poosh \nhas been sent</string>
+    <string name="activity_final_title_prefix">Your poosh for \n</string>
+    <string name="activity_final_title_postfix">\nhas been sent</string>
+    
+    
+    <!--Transitions-->
+    <string name="transition_logo">logo</string>
+    <string name="transition_fab_reg_ver">fab_reg_ver</string>
+    <string name="transition_fab_ver_record">fab_ver_record</string>
+
+</resources>

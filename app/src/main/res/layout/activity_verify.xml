@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".mvp.views.impls.VerifyActivity"
+    android:id="@+id/activity_verify_coordinator">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_verify_logo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:cropToPadding="false"
+            android:contextClickable="false"
+            android:layout_above="@+id/activity_verify_help"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_32"
+            android:transitionName="@string/transition_logo"/>
+
+        <TextView
+            android:id="@+id/activity_verify_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/activity_verify_help_title"
+            android:layout_above="@+id/activity_verify_editText"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/baseText"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <EditText
+            android:id="@+id/activity_verify_editText"
+            android:textColorHint="@color/baseHint"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bubble_corner_light"
+            android:padding="16dp"
+            android:inputType="numberPassword"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/activity_verify_editText"
+            android:layout_marginTop="@dimen/activity_vertical_margin_32"
+            android:transitionName="@string/transition_fab_reg_ver">
+
+            <ImageView
+                android:id="@+id/activity_verify_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_to_left_hint"
+                android:layout_gravity="center"/>
+
+            <com.natasa.progressviews.CircleProgressBar
+                android:id="@+id/activity_verify_progressBar"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                app:bar_width="1dp"
+                app:bar_color="@color/baseHint"
+                app:progress_color="@color/colorAccent"
+                app:progress_width="3dp"
+                android:layout_gravity="right|center_vertical"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/activity_verify_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_to_right"
+                android:visibility="gone"
+                android:transitionName="@string/transition_fab_ver_record"/>
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

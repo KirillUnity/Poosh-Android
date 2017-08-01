@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".mvp.views.impls.RegistrationActivity"
+    android:background="@color/colorPrimary"
+    android:id="@+id/activity_registration_coordinator">
+
+    <RelativeLayout
+        android:id="@+id/activity_registration_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/activity_registration_logo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:cropToPadding="false"
+            android:contextClickable="false"
+            android:layout_above="@+id/activity_registration_help"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_32"
+            android:transitionName="@string/transition_logo"/>
+
+        <TextView
+            android:id="@+id/activity_registration_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/activity_registration_help_title"
+            android:layout_above="@+id/activity_registration_editText"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/baseText"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+
+        <EditText
+            android:id="@+id/activity_registration_editText"
+            android:hint="@string/activity_registration_editText_hint"
+            android:textColorHint="@color/baseHint"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/bubble_corner_light"
+            android:padding="16dp"
+            android:inputType="phone"
+            android:digits="+0123456789()-"
+            android:maxLength="18"
+            android:maxLines="1"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/activity_registration_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_arrow_to_right"
+            android:layout_below="@+id/activity_registration_editText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin_32"
+            android:transitionName="@string/transition_fab_reg_ver"
+            app:elevation="10dp"
+            app:pressedTranslationZ="2dp"
+            app:layout_behavior="me.appstockus.poosh_android.ui.behaviors.FABBaseBehavior" />
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

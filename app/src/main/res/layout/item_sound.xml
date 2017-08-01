@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/record_button_max_size"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp">
+
+    <FrameLayout
+        android:id="@+id/item_sound_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/item_sound_title">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/item_sound_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            app:siBorderWidth="1dp"
+            app:siBorderColor="@color/colorPrimaryLight"
+            android:layout_margin="4dp"/>
+
+        <com.natasa.progressviews.CircleProgressBar
+            android:id="@+id/item_sound_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:bar_width="1dp"
+            app:bar_color="@color/colorPrimaryLight"
+            app:progress_color="@color/colorAccent"
+            app:progress_width="4dp"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_sound_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Title"
+        android:textColor="@color/baseHint"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:drawableRight="@drawable/ic_lock"
+        android:drawablePadding="6dp"
+        android:layout_marginBottom="16dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_voice_layout">
+
+    <com.natasa.progressviews.LineProgressBar
+        android:id="@+id/fragment_voice_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:foregroundGravity="bottom"
+        app:progress="50"
+        app:progress_color="@color/colorAccent"
+        app:progress_width="2dp"
+        app:bar_width="1dp"
+        app:bar_color="#00ffffff"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <me.appstockus.poosh_android.ui.views.RecordController
+        android:id="@+id/fragment_voice_recordController"
+        android:layout_below="@+id/fragment_voice_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+

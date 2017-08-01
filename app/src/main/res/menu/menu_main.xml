@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".mvp.views.impls.MainActivity">
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_more"
+        android:title="@string/menu_main_title_more"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_main_invite"
+                android:title="@string/menu_main_title_invite"
+                android:icon="@drawable/ic_invite"/>
+
+            <item
+                android:id="@+id/menu_main_mute"
+                android:title="@string/menu_main_title_mute"
+                android:icon="@drawable/ic_mute"/>
+
+            <item
+                android:id="@+id/menu_main_restore_purchases"
+                android:title="@string/menu_main_title_restore_purchases"
+                android:icon="@drawable/ic_upload"/>
+
+
+            <item
+                android:id="@+id/menu_main_logout"
+                android:title="@string/menu_main_title_logout"
+                android:icon="@drawable/ic_logout"/>
+
+        </menu>
+
+
+    </item>
+
+
+</menu>

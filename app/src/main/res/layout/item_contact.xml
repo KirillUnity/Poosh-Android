@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_contact_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="12">
+
+        <ImageView
+            android:id="@+id/item_contact_avatar"
+            android:layout_height="@dimen/contact_icon_size"
+            android:layout_width="@dimen/contact_icon_size"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/button_check"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/item_contact_name"
+            android:text="Dmitry Belousov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="12"
+            android:textColor="@color/baseHint"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/item_contact_mute"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_mute"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/item_contact_linear"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/colorPrimaryLight"/>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+    <View
+        android:id="@+id/section_sound_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingTop="16dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorPrimaryLight"/>
+
+    <TextView
+        android:id="@+id/section_sound_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/section_sound_separator"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="Section name #1"
+        android:layout_marginTop="@dimen/activity_vertical_margin_32" />
+
+    <Button
+        android:id="@+id/section_sound_buyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/section_sound_buy_button_title"
+        android:textColor="@color/baseHint"
+        android:textColorHighlight="@color/white"
+        android:textSize="15sp"
+        android:background="#00ffffff"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignTop="@+id/section_sound_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/section_sound_text" />
+
+</RelativeLayout>

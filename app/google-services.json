@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "795297193607",
+    "firebase_url": "https://pooshandroid.firebaseio.com",
+    "project_id": "pooshandroid",
+    "storage_bucket": "pooshandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795297193607:android:dc03875617a84d34",
+        "android_client_info": {
+          "package_name": "me.appstockus.poosh_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795297193607-am5vpvud2m7vd5gihpd1e95a0h3l5645.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.appstockus.poosh_android",
+            "certificate_hash": "ddc2c319176f713f39b97e236c242cbed630547a"
+          }
+        },
+        {
+          "client_id": "795297193607-5erpci2tqpureh68nf1kglkced92jj9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7rLFGh8bv5slseKrHqvHOTcvjYLLEBZk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795297193607-5erpci2tqpureh68nf1kglkced92jj9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
